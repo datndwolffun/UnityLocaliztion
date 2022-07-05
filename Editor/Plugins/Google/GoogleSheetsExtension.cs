@@ -46,7 +46,7 @@ namespace UnityEditor.Localization.Plugins.Google
         /// <summary>
         /// The column mappings. Each <see cref="SheetColumn"/> represents a column in a Google sheet. The column mappings are responsible for converting to and from cell data.
         /// </summary>
-        public List<SheetColumn> Columns { get => m_Columns; }
+        public List<SheetColumn> Columns { get => m_Columns; set => m_Columns = value; }
 
         /// <summary>
         /// The SheetsServiceProvider provides the authorization and connection to the Google Sheets service.
